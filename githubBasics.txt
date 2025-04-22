@@ -9,6 +9,7 @@ git init => Initialize an empty git reprository in the current folders
 ls -a => Shows hidden files
 vi => opens files
 cat => display file content
+rm -rf => delete  files
 
 git status => Shows the status of files (Untracked and staged)
 git add => Add the untracked files to comit/stage
@@ -16,3 +17,15 @@ git commit -m "message" => Create a snapshot of the staged changes along a timel
 git restore --staged <filename> => Unstage the staged changes
 ESC :wq => To come out of screen if you use | git commit | 
 git log => To see all the message logs in reprository
+git stash => Saves uncommitted changes and resets the working directory to the last commit.
+git stash pop => Restores the most recent stashed changes and removes them from the stash list.
+git stash clear => Deletes all stashed changes permanently.
+git remote add origin <URL> 
+git config --global user.name ""
+git config --global user.email ""
+git push origin <branch name>
+git branch <branch Name>
+git checkout <branch name>
+git merge <branch name>
+git remote -v
+
