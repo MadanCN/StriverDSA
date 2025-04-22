@@ -1,36 +1,46 @@
-Basic Commands:
- 
+🧾 Basic Terminal Commands
 
-ls => Shows list of files and folders in the current directory
-mkdir => Creates a directory
-cd => Change directory
-touch => Create and Update files
-git init => Initialize an empty git reprository in the current folders
-ls -a => Shows hidden files
-vi => opens files
-cat => display file content
-rm -rf => delete  files
+ls	Lists files and directories in the current folder.
+ls -a	Lists all files, including hidden ones.
+mkdir <dir>	Creates a new directory.
+cd <dir>	Changes current directory to <dir>.
+touch <file>	Creates a new file or updates the timestamp of an existing one.
+rm -rf <dir/file>	Forcefully deletes a file or directory and its contents.
+vi <file>	Opens a file in the vi text editor.
+cat <file>	Displays the contents of a file.
 
-Git commands:
+🧑‍💻 Git Commands
 
-git status => Shows the status of files (Untracked and staged)
-git add => Add the untracked files to comit/stage
-git commit -m "message" => Create a snapshot of the staged changes along a timeline of a Git projects history.
-git restore --staged <filename> => Unstage the staged changes
-ESC :wq => To come out of screen if you use | git commit | 
-git log => To see all the message logs in reprository
-git stash => Saves uncommitted changes and resets the working directory to the last commit.
-git stash pop => Restores the most recent stashed changes and removes them from the stash list.
-git stash clear => Deletes all stashed changes permanently.
-git remote add origin <URL> 
-git config --global user.name ""
-git config --global user.email ""
-git push origin <branch name>
-git branch <branch Name>
-git checkout <branch name>
-git merge <branch name>
-git remote -v
-git clone
-git push origin <branchname> -f
-
-
+git init	Initializes a new Git repository.
+git status	Shows current changes (staged, unstaged, untracked).
+git add <file>	Stages changes of specified file for commit.
+git add .	Stages all changes in the working directory.
+git restore --staged <file>	Unstages a staged file without discarding changes.
+git commit -m "msg"	Saves the staged snapshot with a commit message.
+git log	Shows a history of commits.
+git stash	Temporarily saves uncommitted changes and cleans working directory.
+git stash pop	Restores the latest stashed changes and removes them from stash.
+git stash list	Displays list of all stashed changes.
+git stash clear	Permanently deletes all stashes.
+git config --global user.name "Your Name"	Sets global Git username.
+git config --global user.email "you@example.com"	Sets global Git email.
+git remote add origin <url>	Links your local repo to a remote GitHub repo.
+git remote -v	Verifies the linked remote repo URLs.
+git push origin <branch>	Pushes commits to the specified remote branch.
+git push origin <branch> -f	Force pushes the branch (overwrites remote changes).
+git pull origin <branch>	Pulls and merges changes from remote branch.
+git branch	Lists all local branches.
+git branch <name>	Creates a new branch.
+git checkout <branch>	Switches to the specified branch.
+git checkout -b <name>	Creates and switches to a new branch.
+git merge <branch>	Merges specified branch into current one.
+git clone <url>	Downloads a repository to your local machine.
+git rebase -i <commit>	Interactively rebase commits for clean history.
+ESC :wq	Exits and saves in vi editor (used during commit messages).
+git diff	Shows unstaged changes between working directory and index.
+git reset --hard	Resets working directory and index to last commit (destructive).
+git reset --soft HEAD~1	Undoes the last commit but keeps changes staged.
+git rm <file>	Removes file from working directory and staging area.
+git clean -fd	Removes untracked files and folders.
+git fetch	Retrieves latest changes from remote but doesn't merge.
+git pull	Fetches and merges remote changes into current branch.
