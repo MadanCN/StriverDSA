@@ -14,3 +14,5 @@ git status => Shows the status of files (Untracked and staged)
 git add => Add the untracked files to comit/stage
 git commit -m "message" => Create a snapshot of the staged changes along a timeline of a Git projects history.
 git restore --staged <filename> => Unstage the staged changes
+ESC :wq => To come out of screen if you use | git commit | 
+git log => To see all the message logs in reprository
