@@ -28,4 +28,6 @@ git branch <branch Name>
 git checkout <branch name>
 git merge <branch name>
 git remote -v
+git clone
+
 
